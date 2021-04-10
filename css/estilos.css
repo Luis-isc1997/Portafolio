@@ -1,0 +1,355 @@
+/*
+selectores de etiqueta 
+referencia a una etiqueta que sera manipulada
+para dar un estilo  header, nav, li, a, ol,
+ul, p, footer, section, div
+*/
+
+/*
+selectores descendentes
+es un elemento hijo de cualquier otro selector
+de etiqueta
+
+*/
+
+/*
+selectores id o clase
+una clase es un atributo que esta
+dentro de mis etiquetas html
+*/
+
+/*font-family: 'Fjalla One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
+}
+
+.header{
+	background-color: #cbbcb1;
+	display: flex;
+	justify-content: space-between; 
+	height: 70px;
+	align-items: center;
+
+}
+
+.header figure{
+	margin: 0px 0px 0px 20px;
+	width: 120px;
+	height: 50px;
+}
+
+.header figure img{
+	width: inherit;  /* inherit permite heredar las propiedades agregadas */
+	height: inherit;
+}
+
+.menu{
+	height: inherit;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	height: inherit;
+}
+
+li{
+	height: inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+	line-height: 1.5em;
+	font-size: 40px;
+	font-weight: normal;
+	letter-spacing: -.2px;
+	text-transform: capitalize;
+	color: white;
+	margin:0px;
+}
+
+.link{
+	text-decoration: none;
+	color: white;
+	display: flex;
+	height: inherit;
+	align-items: center;
+	margin: 0px 20px;
+	padding: 0px 10px;
+}
+
+.main{
+	height: 300px;
+	background-color: #cbbcb1;
+/* 	background-image: url(../img/frontend.jpg);*/	
+/* background-size: 500px 300px; */
+	/* background-repeat: no-repeat; */
+	/* background-position: right; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main figure{
+	margin: 0px;
+	width: 500px;
+	height: inherit;
+}
+
+.main img{
+	width: inherit;
+	height: inherit;
+}
+
+.main span{
+color: #52057b;
+}
+
+h2{
+	margin: 0px;
+	padding: 30px 0px;
+	text-transform: uppercase;
+	color: #005086;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.proyecto{
+	padding: 0px 30px 10px 30px;
+	background-color: #4314a125;
+}
+
+.proyect{
+/* 	border: 1px solid black;
+ */	border-radius: 10px;
+	box-shadow: 0px 0px 10px black;
+	/*box-shadow: derecha abajo difuminado color  */
+	/*padding: 30px;*/
+	display: flex;
+	padding: 30px;
+	margin: 0px 0px 30px 0px;
+	background-color: #fff;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.proyect-title{
+	margin: 0px;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.proyect-language{
+	margin-top: 20px;
+}
+.proyect-date{
+	margin-top: 20px;
+}
+.proyect-link{
+	margin-top: 20px;
+}
+.proyect-description{
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.proyect-left{
+	width: 500px;
+	margin: 0px;
+	font-size: 25px;
+}
+
+.proyect-containerRight{
+	width: 500px;
+}
+
+.proyec-image{
+	width: inherit;
+}
+
+.experiences{
+	padding: 0px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.experience{
+/* 	border: 1px solid blue; */	
+	margin: 0px 20px 40px 0px;
+	width: 480px;
+	border-radius: 10px;
+	overflow: hidden;
+	flex-shrink: 0;
+	background-color: #f4fbff;
+	
+	
+}
+
+.experience-container_image{
+	margin: 0px;
+	width: inherit;
+	height: 200px;
+}
+
+.experience-image{
+	width: inherit; /* ancho heredado del article de 480px */
+	height: inherit;
+	object-fit: cover; /* popiedad que permite redimencionar las imagenes es decir recortar a los lados */
+
+}
+
+.experience-down{
+	margin: 20px 40px;
+	margin-top: -40px;
+	background-color: white;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+
+}
+
+.experience-table{
+	margin: 0px;
+}
+
+.experience-description{
+	text-align: left;
+}
+
+.experience-down button{
+	border: 1px solid #005086;
+	padding: 10px 25px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #5e92b4;
+	color: #005086;
+}
+
+.experience-mainTitle{
+	margin-left: 30px;
+	margin: 0px;
+}
+
+.contact{
+	display: flex;
+	background-color: rgba(263, 175, 61, 0.795);
+	padding: 30px 30px 30px 0px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.redes{
+	/* border: 1px solid red; */
+	display: flex;
+}
+
+.redes-link{
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	/* border: 1px solid blue; */
+}
+
+.redes-link.github{
+	background-image: url(../img/github.jpg);
+	background-size: 70px 50px;
+}
+.redes-link.facebook{
+	background-image: url(../img/facebook.jpg);
+	background-size: 70px 50px;
+}
+.redes-link.instagram{
+	background-image: url(../img/instagram.jpg);
+	background-size: 70px 50px;
+}
+.redes-link.twitter{
+	background-image: url(../img/twitter.jpg);
+	background-size: 70px 50px;
+}
+
+.contact-form{
+	/* border: 1px solid blue; */
+	margin: 30px;
+}
+
+.contact-form input{
+	border-color: gray;
+	border-style: solid;
+	padding: 5px 5px 5px 35px;
+	border-radius: 5px;
+	background-image: url(../img/correo.jpg);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	background-position-y: center;
+	background-position-x: 5px;
+	outline: none;
+	margin-top: 20px ;
+
+}
+
+.contact-form button{
+	display: block;
+	padding: 5px 25px;
+	cursor: pointer;
+	font-size: 16px;
+	border: 1px solid white;
+	background-color: transparent;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.contact-form h2{
+	padding: 0px;
+}
+
+.footer{
+	background-color: #8675a9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 60px;
+}
+
+.footer-details{
+	display: flex;
+	align-items: center;
+}
+
+.footer-details img{
+	width: 40px;
+	height: 40px;
+	margin-left: 15px;
+}
+
+.wrapper{
+	width: 1000px;
+/* 	border: 1px solid red;*/	
+	margin: 0px auto;
+	display: inherit;
+	align-items: inherit;
+	justify-content: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
